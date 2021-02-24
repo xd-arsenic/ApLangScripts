@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Binary by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 	<head>
 		<title>Scripts by Daniel</title>
@@ -46,7 +42,8 @@
 				<div class="image">
 
 					
-					<h3> How many people are in the group?</h3>
+					
+					<h1 style="margin-top: 0em;" style="margin-bottom: 25px;"> How many people are in the group?</h1>
 					<form>
 						  
 						<input class="rb-email" name="contact-preference" id="rb-email" type="radio" checked="checked" />
@@ -54,14 +51,12 @@
 						<br>
 						
 						<input class="rb-phone" name="contact-preference" id="rb-phone" type="radio" />
-						<label class="label" for="rb-phone">4</label>
+						<label style="margin-bottom: 0em;" class="label" for="rb-phone">4</label>
 						<br>
 						<br>
+						<h2 style="margin-bottom: 10px;"> Script:</h2>
+						<label class="label email" for="email"> 
 						
-						<label class="label email" for="email"><p> <a id="leader1"></a> 
-							<h1> Script:</h1>
-							<p></p>
-							<P></P>
 							<p> <a id="leader1"></a>  asks if question if line medium or whole</p>
 							<p> <a id="1person"></a>  says the type of question it is</p>
 							<P> <a id="leader2"></a> reads the question</p>
@@ -77,33 +72,23 @@
 							<P> <a id="leader11"></a> asks <a id="person1"></a> for the group's collective answer</P>
 						</label>
 						
-						<label class="label phone" for="phone">Phone:</label>
+						<label class="label phone" for="phone">
+							<p> <a id="leader1"></a>  asks if question if line medium or whole</p>
+					<p> <a id="11person"></a>  says the type of question it is</p>
+					<P> <a id="1leader2"></a> reads the question</p>
+					<P> <a id="1leader3"></a> ask what line it is on</P>
+					<p> <a id="1person1"> </a> says what line it is on</p>
+					<P> <a id="1leader4"></a> rereads the question</p>
+					<P> <a id="1leader5"></a> asks <a id="12person"></a> what they think the answer is based on the reading</P>
+					<P> <a id="1leader6"></a> reads choice A.  Asks <a id="11son"></a> for their thoughts on that choice</P>
+					<P> <a id="1leader7"></a> reads choice B.  Asks <a id="12person"></a> for their thoughts on that choice</P>
+					<P> <a id="1leader8"></a> reads choice C.  Asks <a id="1person2"></a> for their thoughts on that choice</P>
+					<P> <a id="1leader9"></a> reads choice D.  Asks <a id="12son"></a> for their thoughts on that choice</P>
+					<P> <a id="1leader10"></a> reads choice E.  Asks <a id="13person"></a> for their thoughts on that choice</P>
+					<P> <a id="1leader11"></a> asks <a id="1person3"></a> for the group's collective answer</P>
+						</label>
 					  
 					  </form>
-					
-					<div class="threepeoplescript" id="green" class="show-hide">
-					
-						</div>
-					
-					
-					<div class="fourpeoplescript" id="red" class="show-hide">
-					<h1> Script:</h1>
-					<p></p>
-					<P></P>
-					<p> <a id="leader1"></a>  Does not asks if question if line medium or whole</p>
-					<p> <a id="1person"></a>  says the type of question it is</p>
-					<P> <a id="leader2"></a> reads the question</p>
-					<P> <a id="leader3"></a> ask what line it is on</P>
-					<p> <a id="person1"> </a> says what line it is on</p>
-					<P> <a id="leader4"></a> rereads the question</p>
-					<P> <a id="leader5"></a> asks <a id="2person"></a> what they think the answer is based on the reading</P>
-					<P> <a id="leader6"></a> reads choice A.  Asks <a id="person2"></a> for their thoughts on that choice</P>
-					<P> <a id="leader7"></a> reads choice B.  Asks <a id="3person"></a> for their thoughts on that choice</P>
-					<P> <a id="leader8"></a> reads choice C.  Asks <a id="person3"></a> for their thoughts on that choice</P>
-					<P> <a id="leader9"></a> reads choice D.  Asks <a id="4person"></a> for their thoughts on that choice</P>
-					<P> <a id="leader10"></a> reads choice E.  Asks <a id="person4"></a> for their thoughts on that choice</P>
-					<P> <a id="leader11"></a> asks <a id="person1"></a> for the group's collective answer</P>
-						</div>
 
 						
 					
@@ -111,17 +96,18 @@
 				<div class="content">
 					<div class="inner">
 						<header>
-							<h2><a>Choose Roles</h2>
+							<h2 style="margin-top: .5em;"><a>Choose Roles</h2>
 						</header>
 						
 						
 
-						<h3> Enter the names of the people in the group (leader first).</h3>
+						<h3> Enter the names of the people in the group <br> <small>(leave 4th field blank if it does not apply). </small></h3>
 
 						<form onsubmit="return false;">
-							<input type="text" id="leadername" name="leader"><br>
-							<input type="text" id="persononename" name="person1"><br>
-							<input type="text" id="persontwoname" name="person2"><br>
+							<input placeholder="Leader Name" type="text" id="leadername" aria-label="Leader Name" name="leader"><br>
+							<input placeholder="Person 1 Name" type="text" id="persononename" name="person1"><br>
+							<input placeholder="Person 2 Name" type="text" id="persontwoname" name="person2"><br>
+							<input placeholder="Person 2 Name" type="text" id="personthreename" name="person3"><br>
 
 							<ul class="actions">
 								<li><input type="submit" id="btnmyNumber"></li>
@@ -190,8 +176,40 @@
 					document.getElementById('person2').innerHTML = person2Var;
 					document.getElementById('person3').innerHTML = person2Var;
 					document.getElementById('person4').innerHTML = person2Var;
+
+					var leaderVar = document.getElementById("leadername").value;
+	document.getElementById('1leader1').innerHTML = leaderVar;
+	document.getElementById('1leader2').innerHTML = leaderVar;
+	document.getElementById('1leader3').innerHTML = leaderVar;
+	document.getElementById('1leader4').innerHTML = leaderVar;
+	document.getElementById('1leader5').innerHTML = leaderVar;
+	document.getElementById('1leader6').innerHTML = leaderVar;
+	document.getElementById('1leader7').innerHTML = leaderVar;
+	document.getElementById('1leader8').innerHTML = leaderVar;
+	document.getElementById('1leader9').innerHTML = leaderVar;
+	document.getElementById('1leader10').innerHTML = leaderVar;
+	document.getElementById('1leader11').innerHTML = leaderVar;
+
+	var person1Var = document.getElementById("persononename").value;
+	document.getElementById('11person').innerHTML = person1Var;
+	document.getElementById('12person').innerHTML = person1Var;
+	document.getElementById('13person').innerHTML = person1Var;
+	document.getElementById('14person').innerHTML = person1Var;
+
+	var person2Var = document.getElementById("persontwoname").value;
+	document.getElementById('1person1').innerHTML = person2Var;
+	document.getElementById('1person2').innerHTML = person2Var;
+	document.getElementById('1person3').innerHTML = person2Var;
+	document.getElementById('1person4').innerHTML = person2Var;
+
+	var person3Var = document.getElementById("personthreename").value;
+	document.getElementById('11son').innerHTML = person3Var;
+	document.getElementById('12son').innerHTML = person3Var;
+	document.getElementById('13son').innerHTML = person23Var;
+	document.getElementById('14son').innerHTML = person3Var;
 }
-					
+
+
 				
 					
 					
