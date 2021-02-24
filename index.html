@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	Binary by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Scripts by Daniel</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo"><strong>Scripts</strong> by Daniel</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Generic</a></li>
+					<li><a href="elements.html">Elements</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1>This is Scripts, and I made this during class<br />
+					 <a href="https://templated.co"></a></h1>
+					<ul class="actions">
+						<li><a href="#one" class="button alt scrolly big">Continue</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<article id="one" class="post style1">
+				<div class="image">
+					
+					<div class="threepeoplescript">
+					<h1> Script:</h1>
+					<p></p>
+					<P></P>
+					<p> <a id="leader1"></a>  asks if question if line medium or whole</p>
+					<p> <a id="1person"></a>  says the type of question it is</p>
+					<P> <a id="leader2"></a> reads the question</p>
+					<P> <a id="leader3"></a> ask what line it is on</P>
+					<p> <a id="person1"> </a> says what line it is on</p>
+					<P> <a id="leader4"></a> rereads the question</p>
+					<P> <a id="leader5"></a> asks <a id="2person"></a> what they think the answer is based on the reading</P>
+					<P> <a id="leader6"></a> reads choice A.  Asks <a id="person2"></a> for their thoughts on that choice</P>
+					<P> <a id="leader7"></a> reads choice B.  Asks <a id="3person"></a> for their thoughts on that choice</P>
+					<P> <a id="leader8"></a> reads choice C.  Asks <a id="person3"></a> for their thoughts on that choice</P>
+					<P> <a id="leader9"></a> reads choice D.  Asks <a id="4person"></a> for their thoughts on that choice</P>
+					<P> <a id="leader10"></a> reads choice E.  Asks <a id="person4"></a> for their thoughts on that choice</P>
+					<P> <a id="leader11"></a> asks <a id="person1"></a> for the group's collective answer</P>
+						</div>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<header>
+							<h2><a>Choose Roles</h2>
+						</header>
+						
+						<h3> How many people are in the group?</h3>
+						<form>
+							<input type="radio" id="male" name="gender" value="male" checked="checked">
+							<label for="male">3</label><br>
+							<input type="radio" id="female" name="gender" value="female">
+							<label for="female">4</label><br>
+						  </form> 
+
+						<h3> Enter the names of the people in the group (leader first).</h3>
+
+						<form onsubmit="return false;">
+							<input type="text" id="leadername" name="leader"><br>
+							<input type="text" id="persononename" name="person1"><br>
+							<input type="text" id="persontwoname" name="person2"><br>
+
+							<ul class="actions">
+								<li><input type="submit" id="btnmyNumber"></li>
+							</ul>
+
+						  </form>
+
+						
+					</div>
+					<div class="postnav">
+						<a href="#" class="prev disabled"><span class="icon fa-chevron-up"></span></a>
+						<a href="#two" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+					</div>
+				</div>
+			</article>
+
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script> 
+			
+			document.getElementById("btnmyNumber").addEventListener("click", myFunctionVar);
+
+				function myFunctionVar() {
+					var leaderVar = document.getElementById("leadername").value;
+					document.getElementById('leader1').innerHTML = leaderVar;
+					document.getElementById('leader2').innerHTML = leaderVar;
+					document.getElementById('leader3').innerHTML = leaderVar;
+					document.getElementById('leader4').innerHTML = leaderVar;
+					document.getElementById('leader5').innerHTML = leaderVar;
+					document.getElementById('leader6').innerHTML = leaderVar;
+					document.getElementById('leader7').innerHTML = leaderVar;
+					document.getElementById('leader8').innerHTML = leaderVar;
+					document.getElementById('leader9').innerHTML = leaderVar;
+					document.getElementById('leader10').innerHTML = leaderVar;
+					document.getElementById('leader11').innerHTML = leaderVar;
+
+					var person1Var = document.getElementById("persononename").value;
+					document.getElementById('1person').innerHTML = person1Var;
+					document.getElementById('2person').innerHTML = person1Var;
+					document.getElementById('3person').innerHTML = person1Var;
+					document.getElementById('4person').innerHTML = person1Var;
+
+					var person2Var = document.getElementById("persontwoname").value;
+					document.getElementById('person1').innerHTML = person2Var;
+					document.getElementById('person2').innerHTML = person2Var;
+					document.getElementById('person3').innerHTML = person2Var;
+					document.getElementById('person4').innerHTML = person2Var;
+				}
+					
+					
+			</script>
+
+	</body>
+</html>
