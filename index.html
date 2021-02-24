@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
 
@@ -43,28 +44,49 @@
 		<!-- One -->
 			<article id="one" class="post style1">
 				<div class="image">
+
 					
-					<div class="threepeoplescript">
-					<h1> Script:</h1>
-					<p></p>
-					<P></P>
-					<p> <a id="leader1"></a>  asks if question if line medium or whole</p>
-					<p> <a id="1person"></a>  says the type of question it is</p>
-					<P> <a id="leader2"></a> reads the question</p>
-					<P> <a id="leader3"></a> ask what line it is on</P>
-					<p> <a id="person1"> </a> says what line it is on</p>
-					<P> <a id="leader4"></a> rereads the question</p>
-					<P> <a id="leader5"></a> asks <a id="2person"></a> what they think the answer is based on the reading</P>
-					<P> <a id="leader6"></a> reads choice A.  Asks <a id="person2"></a> for their thoughts on that choice</P>
-					<P> <a id="leader7"></a> reads choice B.  Asks <a id="3person"></a> for their thoughts on that choice</P>
-					<P> <a id="leader8"></a> reads choice C.  Asks <a id="person3"></a> for their thoughts on that choice</P>
-					<P> <a id="leader9"></a> reads choice D.  Asks <a id="4person"></a> for their thoughts on that choice</P>
-					<P> <a id="leader10"></a> reads choice E.  Asks <a id="person4"></a> for their thoughts on that choice</P>
-					<P> <a id="leader11"></a> asks <a id="person1"></a> for the group's collective answer</P>
+					<h3> How many people are in the group?</h3>
+					<form>
+						  
+						<input class="rb-email" name="contact-preference" id="rb-email" type="radio" checked="checked" />
+						<label class="label" for="rb-email">3</label>
+						<br>
+						
+						<input class="rb-phone" name="contact-preference" id="rb-phone" type="radio" />
+						<label class="label" for="rb-phone">4</label>
+						<br>
+						<br>
+						
+						<label class="label email" for="email"><p> <a id="leader1"></a> 
+							<h1> Script:</h1>
+							<p></p>
+							<P></P>
+							<p> <a id="leader1"></a>  asks if question if line medium or whole</p>
+							<p> <a id="1person"></a>  says the type of question it is</p>
+							<P> <a id="leader2"></a> reads the question</p>
+							<P> <a id="leader3"></a> ask what line it is on</P>
+							<p> <a id="person1"> </a> says what line it is on</p>
+							<P> <a id="leader4"></a> rereads the question</p>
+							<P> <a id="leader5"></a> asks <a id="2person"></a> what they think the answer is based on the reading</P>
+							<P> <a id="leader6"></a> reads choice A.  Asks <a id="person2"></a> for their thoughts on that choice</P>
+							<P> <a id="leader7"></a> reads choice B.  Asks <a id="3person"></a> for their thoughts on that choice</P>
+							<P> <a id="leader8"></a> reads choice C.  Asks <a id="person3"></a> for their thoughts on that choice</P>
+							<P> <a id="leader9"></a> reads choice D.  Asks <a id="4person"></a> for their thoughts on that choice</P>
+							<P> <a id="leader10"></a> reads choice E.  Asks <a id="person4"></a> for their thoughts on that choice</P>
+							<P> <a id="leader11"></a> asks <a id="person1"></a> for the group's collective answer</P>
+						</label>
+						
+						<label class="label phone" for="phone">Phone:</label>
+					  
+					  </form>
+					
+					<div class="threepeoplescript" id="green" class="show-hide">
+					
 						</div>
 					
 					
-					<div class="fourpeoplescript">
+					<div class="fourpeoplescript" id="red" class="show-hide">
 					<h1> Script:</h1>
 					<p></p>
 					<P></P>
@@ -82,6 +104,8 @@
 					<P> <a id="leader10"></a> reads choice E.  Asks <a id="person4"></a> for their thoughts on that choice</P>
 					<P> <a id="leader11"></a> asks <a id="person1"></a> for the group's collective answer</P>
 						</div>
+
+						
 					
 				</div>
 				<div class="content">
@@ -90,13 +114,7 @@
 							<h2><a>Choose Roles</h2>
 						</header>
 						
-						<h3> How many people are in the group?</h3>
-						<form>
-							<input type="radio" id="male" name="gender" value="male" checked="checked">
-							<label for="male">3</label><br>
-							<input type="radio" id="female" name="gender" value="female">
-							<label for="female">4</label><br>
-						  </form> 
+						
 
 						<h3> Enter the names of the people in the group (leader first).</h3>
 
@@ -110,6 +128,11 @@
 							</ul>
 
 						  </form>
+
+						  
+						  
+						  
+			
 
 						
 					</div>
@@ -167,17 +190,9 @@
 					document.getElementById('person2').innerHTML = person2Var;
 					document.getElementById('person3').innerHTML = person2Var;
 					document.getElementById('person4').innerHTML = person2Var;
+}
 					
-					var x = document.getElementsByClassName("threepeoplescript");
-					var y = document.getElementsByClassName("fourpeoplescript");
-					
-					if(document.getElementsByClassName('threepeoplescript').checked) {
-					  y.style.display = "none";
-					}else if(document.getElementsByClassName('fourpeoplescript').checked) {
-					  x.style.display = "none";
-					}
-					
-				}
+				
 					
 					
 			</script>
