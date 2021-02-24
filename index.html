@@ -62,6 +62,27 @@
 					<P> <a id="leader10"></a> reads choice E.  Asks <a id="person4"></a> for their thoughts on that choice</P>
 					<P> <a id="leader11"></a> asks <a id="person1"></a> for the group's collective answer</P>
 						</div>
+					
+					
+					<div class="fourpeoplescript">
+					<h1> Script:</h1>
+					<p></p>
+					<P></P>
+					<p> <a id="leader1"></a>  Does not asks if question if line medium or whole</p>
+					<p> <a id="1person"></a>  says the type of question it is</p>
+					<P> <a id="leader2"></a> reads the question</p>
+					<P> <a id="leader3"></a> ask what line it is on</P>
+					<p> <a id="person1"> </a> says what line it is on</p>
+					<P> <a id="leader4"></a> rereads the question</p>
+					<P> <a id="leader5"></a> asks <a id="2person"></a> what they think the answer is based on the reading</P>
+					<P> <a id="leader6"></a> reads choice A.  Asks <a id="person2"></a> for their thoughts on that choice</P>
+					<P> <a id="leader7"></a> reads choice B.  Asks <a id="3person"></a> for their thoughts on that choice</P>
+					<P> <a id="leader8"></a> reads choice C.  Asks <a id="person3"></a> for their thoughts on that choice</P>
+					<P> <a id="leader9"></a> reads choice D.  Asks <a id="4person"></a> for their thoughts on that choice</P>
+					<P> <a id="leader10"></a> reads choice E.  Asks <a id="person4"></a> for their thoughts on that choice</P>
+					<P> <a id="leader11"></a> asks <a id="person1"></a> for the group's collective answer</P>
+						</div>
+					
 				</div>
 				<div class="content">
 					<div class="inner">
@@ -146,6 +167,16 @@
 					document.getElementById('person2').innerHTML = person2Var;
 					document.getElementById('person3').innerHTML = person2Var;
 					document.getElementById('person4').innerHTML = person2Var;
+					
+					var x = document.getElementsByClassName("threepeoplescript");
+					var y = document.getElementsByClassName("fourpeoplescript");
+					
+					if(document.getElementsByClassName('threepeoplescript').checked) {
+					  y.style.display = "none";
+					}else if(document.getElementsByClassName('fourpeoplescript').checked) {
+					  x.style.display = "none";
+					}
+					
 				}
 					
 					
