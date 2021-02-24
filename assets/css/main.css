@@ -2000,11 +2000,11 @@
 		border: none;
 		border: solid 1px;
 		color: inherit;
-		display: block;
 		outline: 0;
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
+		margin-bottom: 2em;
 	}
 
 		input[type="text"]:invalid,
@@ -4588,6 +4588,35 @@
 
 .threepeoplescript a {
 	color: #aa9cd1 !important;
-
+	display: none;
 	font-weight: bold;
 }
+
+.threepeoplescript{
+	display: none;
+}
+
+.fourpeoplescript {
+	display: none;
+}
+
+.three:checked ~ .threepeoplescript {
+	display: inline;
+}
+
+.four:checked ~ .fourpeoplescript {
+	display: inline;
+}
+
+.email, .phone {
+  display:none ;
+}
+
+.rb-email:checked ~ .email {
+  display:inline;
+}
+
+.rb-phone:checked ~ .phone {
+  display:inline;
+}
+
