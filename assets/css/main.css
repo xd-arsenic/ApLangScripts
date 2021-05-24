@@ -4575,7 +4575,7 @@
 
 
 #leader1, #leader2, #leader3, #leader4, #leader5, #leader6, #leader7, #leader8, #leader9, #leader10, #leader11 {
-	color: #5fa5a3 !important;
+	color: #B2A6FF !important;
 
 	font-weight: bold;
 }
@@ -4585,6 +4585,13 @@
 
 	font-weight: bold;
 }
+
+#people1, #people2, #people3, #people4 {
+	color: #7cc23f !important;
+
+	font-weight: bold;
+}
+
 
 .threepeoplescript a {
 	color: #aa9cd1 !important;
