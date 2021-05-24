@@ -50,8 +50,8 @@
 						<label class="label" for="rb-email">3</label>
 						<br>
 						
-						<input class="rb-phone" name="contact-preference" id="rb-phone" type="radio" />
-						<label style="margin-bottom: 0em;" class="label" for="rb-phone">4</label>
+						<input onclick="javascript:window.location.href='four.html'; return false;" class="rb-phone" name="contact-preference" id="rb-phone" type="radio" />
+						<label style="margin-bottom: 0em;" class="label" for="rb-phone"><a style="color: #444" href="four.html">4</a></label>
 						<br>
 						<br>
 						<h2 style="margin-bottom: 10px;"> Script:</h2>
@@ -69,7 +69,7 @@
 							<P> <a id="leader8"></a> reads choice C.  Asks <a id="person3"></a> for their thoughts on that choice</P>
 							<P> <a id="leader9"></a> reads choice D.  Asks <a id="4person"></a> for their thoughts on that choice</P>
 							<P> <a id="leader10"></a> reads choice E.  Asks <a id="person4"></a> for their thoughts on that choice</P>
-							<P> <a id="leader11"></a> asks <a id="person1"></a> for the group's collective answer</P>
+							<P> <a id="leader11"></a> asks <a id="5person"></a> for the group's collective answer</P>
 						</label>
 						
 						<label class="label phone" for="phone">
@@ -107,8 +107,6 @@
 							<input placeholder="Leader Name" type="text" id="leadername" aria-label="Leader Name" name="leader"><br>
 							<input placeholder="Person 1 Name" type="text" id="persononename" name="person1"><br>
 							<input placeholder="Person 2 Name" type="text" id="persontwoname" name="person2"><br>
-							<input placeholder="Person 2 Name" type="text" id="personthreename" name="person3"><br>
-
 							<ul class="actions">
 								<li><input type="submit" id="btnmyNumber"></li>
 							</ul>
@@ -170,6 +168,7 @@
 					document.getElementById('2person').innerHTML = person1Var;
 					document.getElementById('3person').innerHTML = person1Var;
 					document.getElementById('4person').innerHTML = person1Var;
+					document.getElementById('5person').innerHTML = person1Var;
 
 					var person2Var = document.getElementById("persontwoname").value;
 					document.getElementById('person1').innerHTML = person2Var;
